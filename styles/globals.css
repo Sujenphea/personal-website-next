@@ -1,16 +1,62 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url(./../pages/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
 }
 
 * {
-  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  font-family: Raleway;
+  font-weight: black;
+  color: #eee;
+  text-align: center;
+}
+
+.title {
+  font-size: 32pt;
+  line-height: 36pt;
+}
+
+.highlight {
+  color: #b3a5f1;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.category-container > div:first-child {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  margin-top: 50px;
+}
+
+.category-container::after {
+  content: '';
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/* center elements until overflow
+   flex-start overflow 
+*/
+#projects-container::before {
+  content: '';
+  flex: 1;
+}
+
+/* center elements until overflow
+   flex-start overflow 
+*/
+#projects-container::after {
+  content: '';
+  flex: 1;
 }
