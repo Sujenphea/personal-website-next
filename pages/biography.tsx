@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import Image from 'next/image'
-import memoji from './images/memoji-punch.png'
+// import memoji from '../public/images/memoji-punch.png'
 
 function MissionCard() {
   return (
@@ -40,7 +40,7 @@ function Biography() {
         }}
       >
         <div css={{ minWidth: '200px', marginLeft: '20px', marginRight: '20px' }}>
-          <Image src={memoji} alt="profile" />
+          <Image src="/images/memoji-punch.png" alt="profile" width="300px" height="300px" />
         </div>
         <div
           css={{

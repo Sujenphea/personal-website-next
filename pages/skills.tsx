@@ -1,10 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import Image from 'next/image'
 import { css } from '@emotion/react'
-import logoAWS from './images/logo-aws.svg'
-import logoSwift from './images/logo-swift.svg'
-import logoJs from './images/logo-js.png'
-import logoDb from './images/logo-db.svg'
 
 function Skills() {
   const iconStyle = css({
@@ -37,7 +33,7 @@ function Skills() {
       <div css={columnStyle}>
         {/* amazon */}
         <div css={iconStyle}>
-          <Image width="40px" height="40px" src={logoAWS} alt="aws" />
+          <Image width="40px" height="40px" src="/images/logo-aws.svg" alt="aws" />
           <div css={{ marginTop: '20px', display: 'flex', flexDirection: 'column' }}>
             <p>S3</p>
             <p>EC2</p>
@@ -48,7 +44,7 @@ function Skills() {
         </div>
         {/* database */}
         <div css={iconStyle}>
-          <Image width="40px" height="40px" src={logoDb} alt="database" />
+          <Image width="40px" height="40px" src="/images/logo-db.svg" alt="database" />
           <div css={{ marginTop: '20px', display: 'flex', flexDirection: 'column' }}>
             <p>MySQL</p>
             <p>PostgreSQL</p>
@@ -57,7 +53,7 @@ function Skills() {
         </div>
         {/* swift */}
         <div css={iconStyle}>
-          <Image width="40px" height="40px" src={logoSwift} alt="swift" />
+          <Image width="40px" height="40px" src="/images/logo-swift.svg" alt="swift" />
           <div css={{ marginTop: '20px', display: 'flex', flexDirection: 'column' }}>
             <p>Swift</p>
             <p>SwiftUI</p>
@@ -68,7 +64,7 @@ function Skills() {
       <div css={columnStyle}>
         {/* js */}
         <div css={iconStyle}>
-          <Image width="40px" height="40px" src={logoJs} alt="javscript" />
+          <Image width="40px" height="40px" src="/images/logo-js.png" alt="javscript" />
           <div css={{ marginTop: '20px', display: 'flex', flexDirection: 'column' }}>
             <p>React</p>
             <p>Next</p>
