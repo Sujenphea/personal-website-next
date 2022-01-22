@@ -3,6 +3,7 @@ import Contact from './contact'
 import Experiences from './experiences'
 import Profile from './profile'
 import Projects from './projects'
+import Skills from './skills'
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       </section>
       <section id="projects">
         <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
       </section>
       <section id="experiences">
         <Experiences />
