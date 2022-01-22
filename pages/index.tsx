@@ -1,8 +1,8 @@
 import Biography from './biography'
 import Contact from './contact'
-import Experiences from './experiences'
+// import Experiences from './experiences'
 import Profile from './profile'
-import Projects from './projects'
+// import Projects from './projects'
 import Skills from './skills'
 
 export default function Home() {
@@ -11,18 +11,18 @@ export default function Home() {
       <section id="profile">
         <Profile />
       </section>
-      <section id="projects">
+      {/* <section id="projects">
         <Projects />
+      </section> */}
+      <section id="biography">
+        <Biography />
       </section>
       <section id="skills">
         <Skills />
       </section>
-      <section id="experiences">
+      {/* <section id="experiences">
         <Experiences />
-      </section>
-      <section id="biography">
-        <Biography />
-      </section>
+      </section> */}
       <section id="contact">
         <Contact />
       </section>
